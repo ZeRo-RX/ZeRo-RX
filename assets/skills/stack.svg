@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ZeRo-RX tech-stack card  (self-contained, JS-free SVG)
+  =========================================================================
+  A clean "skills" showcase for the GitHub Profile README.
+  Categories are colour-coded; chips carry a soft glow.
+  Animation: none (static, crisp at any size). Works via <img src="...">.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220"
+     role="img" aria-label="ZeRo-RX tech stack: embedded, languages, electronics, tools and AI">
+
+  <defs>
+    <linearGradient id="sPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1620"/>
+      <stop offset="100%" stop-color="#080f16"/>
+    </linearGradient>
+    <filter id="sGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="220" rx="16" fill="url(#sPanel)" stroke="#13252f" stroke-width="1.5"/>
+  <text x="600" y="34" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="15" fill="#5f7a86" letter-spacing="4" font-weight="600">TECH STACK</text>
+
+  <!-- ===== LEFT COLUMN ===== -->
+  <!-- EMBEDDED & IoT -->
+  <text x="40" y="66" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14"
+        font-weight="700" letter-spacing="1.5" fill="#4dd0e1">EMBEDDED &amp; IoT</text>
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" font-weight="600">
+    <g filter="url(#sGlow)"><rect x="40" y="78" width="73" height="30" rx="15" fill="#0e1d27" stroke="#4dd0e1"/><text x="76.5" y="98" text-anchor="middle" fill="#9fe7f0">ESP32</text></g>
+    <g filter="url(#sGlow)"><rect x="121" y="78" width="91" height="30" rx="15" fill="#0e1d27" stroke="#4dd0e1"/><text x="166.5" y="98" text-anchor="middle" fill="#9fe7f0">ESP8266</text></g>
+    <g filter="url(#sGlow)"><rect x="220" y="78" width="55" height="30" rx="15" fill="#0e1d27" stroke="#4dd0e1"/><text x="247.5" y="98" text-anchor="middle" fill="#9fe7f0">AVR</text></g>
+    <g filter="url(#sGlow)"><rect x="283" y="78" width="127" height="30" rx="15" fill="#0e1d27" stroke="#4dd0e1"/><text x="346.5" y="98" text-anchor="middle" fill="#9fe7f0">MicroPython</text></g>
+  </g>
+
+  <!-- LANGUAGES -->
+  <text x="40" y="146" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14"
+        font-weight="700" letter-spacing="1.5" fill="#ffce54">LANGUAGES</text>
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" font-weight="600">
+    <g filter="url(#sGlow)"><rect x="40" y="158" width="37" height="30" rx="15" fill="#0e1d27" stroke="#ffce54"/><text x="58.5" y="178" text-anchor="middle" fill="#ffe0a0">C</text></g>
+    <g filter="url(#sGlow)"><rect x="85" y="158" width="82" height="30" rx="15" fill="#0e1d27" stroke="#ffce54"/><text x="126" y="178" text-anchor="middle" fill="#ffe0a0">Python</text></g>
+    <g filter="url(#sGlow)"><rect x="175" y="158" width="73" height="30" rx="15" fill="#0e1d27" stroke="#ffce54"/><text x="211.5" y="178" text-anchor="middle" fill="#ffe0a0">Perl</text></g>
+    <g filter="url(#sGlow)"><rect x="256" y="158" width="109" height="30" rx="15" fill="#0e1d27" stroke="#ffce54"/><text x="310.5" y="178" text-anchor="middle" fill="#ffe0a0">Assembly</text></g>
+  </g>
+
+  <!-- ===== RIGHT COLUMN ===== -->
+  <!-- ELECTRONICS -->
+  <text x="620" y="66" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14"
+        font-weight="700" letter-spacing="1.5" fill="#7affc4">ELECTRONICS</text>
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" font-weight="600">
+    <g filter="url(#sGlow)"><rect x="620" y="78" width="118" height="30" rx="15" fill="#0e1d27" stroke="#7affc4"/><text x="679" y="98" text-anchor="middle" fill="#b6ffe0">PCB Design</text></g>
+    <g filter="url(#sGlow)"><rect x="746" y="78" width="109" height="30" rx="15" fill="#0e1d27" stroke="#7affc4"/><text x="800.5" y="98" text-anchor="middle" fill="#b6ffe0">Schematics</text></g>
+    <g filter="url(#sGlow)"><rect x="863" y="78" width="91" height="30" rx="15" fill="#0e1d27" stroke="#7affc4"/><text x="908.5" y="98" text-anchor="middle" fill="#b6ffe0">Sensors</text></g>
+    <g filter="url(#sGlow)"><rect x="962" y="78" width="100" height="30" rx="15" fill="#0e1d27" stroke="#7affc4"/><text x="1012" y="98" text-anchor="middle" fill="#b6ffe0">Hardware</text></g>
+  </g>
+
+  <!-- TOOLS & AI -->
+  <text x="620" y="146" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14"
+        font-weight="700" letter-spacing="1.5" fill="#c792ea">TOOLS &amp; AI</text>
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" font-weight="600">
+    <g filter="url(#sGlow)"><rect x="620" y="158" width="91" height="30" rx="15" fill="#0e1d27" stroke="#c792ea"/><text x="665.5" y="178" text-anchor="middle" fill="#e2c2f5">VS Code</text></g>
+    <g filter="url(#sGlow)"><rect x="719" y="158" width="55" height="30" rx="15" fill="#0e1d27" stroke="#c792ea"/><text x="746.5" y="178" text-anchor="middle" fill="#e2c2f5">Git</text></g>
+    <g filter="url(#sGlow)"><rect x="782" y="158" width="82" height="30" rx="15" fill="#0e1d27" stroke="#c792ea"/><text x="823" y="178" text-anchor="middle" fill="#e2c2f5">GitHub</text></g>
+    <g filter="url(#sGlow)"><rect x="872" y="158" width="91" height="30" rx="15" fill="#0e1d27" stroke="#c792ea"/><text x="917.5" y="178" text-anchor="middle" fill="#e2c2f5">AI / ML</text></g>
+  </g>
+</svg>

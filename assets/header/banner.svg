@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ZeRo-RX profile banner  (self-contained, JS-free animated SVG)
+  =========================================================================
+  Used as the top banner of the GitHub Profile README.
+  - Title with a soft cyan glow
+  - A rotating subtitle that cycles through roles using SMIL opacity animation
+  - Subtle animated grid + drifting particles for life
+
+  Animation: SMIL only. No JavaScript. Renders via <img src="..."> in a README.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300"
+     role="img" aria-label="ZeRo-RX profile banner: electronics, embedded systems, Python and AI developer">
+
+  <defs>
+    <linearGradient id="bBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#0a1a24"/>
+      <stop offset="55%" stop-color="#071119"/>
+      <stop offset="100%" stop-color="#0c0f17"/>
+    </linearGradient>
+
+    <radialGradient id="bHalo" cx="50%" cy="38%" r="60%">
+      <stop offset="0%"  stop-color="#4dd0e1" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4dd0e1" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bTitle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#7fe9f5"/>
+      <stop offset="100%" stop-color="#38b2c4"/>
+    </linearGradient>
+
+    <linearGradient id="bBlink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4dd0e1"/>
+      <stop offset="100%" stop-color="#7affc4"/>
+    </linearGradient>
+
+    <pattern id="bGrid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0 L0 0 0 44" fill="none" stroke="#11303b" stroke-width="1"/>
+    </pattern>
+
+    <filter id="bGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="300" fill="url(#bBg)"/>
+  <rect width="1200" height="300" fill="url(#bGrid)" opacity="0.5"/>
+  <rect width="1200" height="300" fill="url(#bHalo)"/>
+
+  <!-- decorative circuit traces -->
+  <g stroke="#15433a" stroke-width="1.4" fill="none" opacity="0.55">
+    <path d="M0 250 C140 250 210 210 360 210"/>
+    <path d="M1200 60 C1080 80 1010 110 900 110"/>
+    <path d="M980 300 C1040 270 1090 250 1200 250"/>
+  </g>
+
+  <!-- drifting particles -->
+  <g fill="#4dd0e1" opacity="0.5">
+    <circle cx="150" cy="90" r="2">
+      <animate attributeName="cy" values="90;70;90" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="200" r="2.4">
+      <animate attributeName="cy" values="200;180;200" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="60" r="1.8">
+      <animate attributeName="cy" values="60;44;60" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="150" text-anchor="middle"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="84" font-weight="800" letter-spacing="4"
+        fill="url(#bTitle)" filter="url(#bGlow)">ZeRo-RX</text>
+
+  <!-- blinking cursor -->
+  <rect x="838" y="98" width="10" height="52" rx="2" fill="url(#bBlink)" filter="url(#bGlow)">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- rotating subtitle (4 roles, each 2s in an 8s loop).
+       8 keyTimes <-> 8 values keeps SMIL valid so only one line shows at a time. -->
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="500"
+     letter-spacing="2" text-anchor="middle">
+    <text x="600" y="210" fill="#9fe7f0" opacity="1">Electronics &amp; Embedded Systems Engineer
+      <animate attributeName="opacity" values="1;1;0;0;0;0;0;0" keyTimes="0;0.25;0.2501;0.5;0.5001;0.75;0.7501;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="210" fill="#9fe7f0" opacity="0">IoT Maker &amp; Firmware Developer
+      <animate attributeName="opacity" values="0;0;1;1;0;0;0;0" keyTimes="0;0.25;0.2501;0.5;0.5001;0.75;0.7501;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="210" fill="#9fe7f0" opacity="0">Python Tooling &amp; Automation
+      <animate attributeName="opacity" values="0;0;0;0;1;1;0;0" keyTimes="0;0.25;0.2501;0.5;0.5001;0.75;0.7501;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="210" fill="#9fe7f0" opacity="0">Exploring AI / ML on the Edge
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" keyTimes="0;0.25;0.2501;0.5;0.5001;0.75;0.7501;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- thin accent line -->
+  <rect x="500" y="240" width="200" height="3" rx="1.5" fill="url(#bBlink)" filter="url(#bGlow)">
+    <animate attributeName="width" values="160;240;160" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="520;480;520" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>

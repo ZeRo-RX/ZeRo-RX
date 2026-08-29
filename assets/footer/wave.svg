@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ZeRo-RX contribution-style wave footer  (self-contained, JS-free animated SVG)
+  =========================================================================
+  Decorative animated wave used at the bottom of the GitHub Profile README.
+  Three layered sine waves drift horizontally to evoke a "contribution graph"
+  flowing off the page. Pure SMIL, renders via <img src="...">.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120"
+     preserveAspectRatio="none" role="img" aria-label="ZeRo-RX animated wave footer">
+
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4dd0e1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4dd0e1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7affc4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#7affc4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c792ea" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#c792ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="120" fill="#070d13"/>
+
+  <!-- each wave is drawn twice (2400 wide) so a -1200 translate loops seamlessly -->
+  <path fill="url(#w3)"
+        d="M0 60 C 150 20 300 100 450 60 S 750 20 900 60 S 1200 100 1350 60 S 1650 20 1800 60 S 2100 100 2250 60 S 2400 100 2400 100 L2400 120 L0 120 Z">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
+  </path>
+
+  <path fill="url(#w2)"
+        d="M0 70 C 150 110 300 30 450 70 S 750 110 900 70 S 1200 30 1350 70 S 1650 110 1800 70 S 2100 30 2250 70 S 2400 30 2400 30 L2400 120 L0 120 Z">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <path fill="url(#w1)"
+        d="M0 85 C 150 55 300 115 450 85 S 750 55 900 85 S 1200 115 1350 85 S 1650 55 1800 85 S 2100 115 2250 85 S 2400 115 2400 115 L2400 120 L0 120 Z">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="7s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="600" y="100" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#5f7a86" letter-spacing="2">Thanks for stopping by — built for the bench, not the banner.</text>
+</svg>
