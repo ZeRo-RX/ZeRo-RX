@@ -234,17 +234,15 @@
   <!-- ========================= SIGNAL PULSES (follow #gpio-wire) ========================= -->
   <circle id="pulse1" r="6" fill="#fff3b0" filter="url(#softGlow)">
     <animateMotion dur="3s" repeatCount="indefinite" calcMode="linear"
-                  keyTimes="0;0.13;0.30;1" keyPoints="0;1;1;1">
-      <mpath xlink:href="#gpio-wire"/>
-    </animateMotion>
+                  keyTimes="0;0.13;0.30;1" keyPoints="0;1;1;1"
+                  path="M266,200 C360,205 430,250 520,300 L560,330 L640,330 L820,345 L845,361"/>
     <animate attributeName="opacity" dur="3s" repeatCount="indefinite"
              keyTimes="0;0.01;0.13;0.30;0.31;1" values="0;1;1;0;0;0"/>
   </circle>
   <circle id="pulse2" r="6" fill="#fff3b0" filter="url(#softGlow)">
     <animateMotion dur="3s" repeatCount="indefinite" calcMode="linear"
-                  keyTimes="0;0.33;0.48;1" keyPoints="0;0;1;1">
-      <mpath xlink:href="#gpio-wire"/>
-    </animateMotion>
+                  keyTimes="0;0.33;0.48;1" keyPoints="0;0;1;1"
+                  path="M266,200 C360,205 430,250 520,300 L560,330 L640,330 L820,345 L845,361"/>
     <animate attributeName="opacity" dur="3s" repeatCount="indefinite"
              keyTimes="0;0.32;0.33;0.48;0.49;1" values="0;0;1;1;0;0"/>
   </circle>

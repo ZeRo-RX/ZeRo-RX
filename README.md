@@ -66,8 +66,7 @@ I build things with **ESP32 / ESP8266**, **MicroPython**, **C**, and **Python**,
 ## GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ZeRo-RX&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="160" alt="ZeRo-RX GitHub stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZeRo-RX&layout=compact&theme=github_dark&hide_border=true" height="160" alt="ZeRo-RX top languages">
+  <img src="./assets/stats/profile-stats.svg" width="100%" alt="ZeRo-RX GitHub statistics">
 </p>
 
 ---

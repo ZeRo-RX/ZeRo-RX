@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ZeRo-RX GitHub statistics card (self-hosted, no external service).
+  Shows real profile metrics. Reliable because it is served from the repo itself,
+  the same way the animated electronics hero is.
+  Numbers reflect the public profile (repositories / followers / following / stars).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200"
+     role="img" aria-label="ZeRo-RX GitHub statistics: 14 repositories, 8 followers, 6 following, 9 stars">
+  <defs>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1d27"/>
+      <stop offset="100%" stop-color="#0a151c"/>
+    </linearGradient>
+    <filter id="softGlow2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="200" rx="14" fill="#070d13" stroke="#13252f" stroke-width="1.5"/>
+
+  <!-- tile 1: Repositories -->
+  <g>
+    <rect x="10" y="40" width="270" height="120" rx="12" fill="url(#tileGrad)" stroke="#1d3340"/>
+    <text x="145" y="105" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="48" font-weight="700" fill="#4dd0e1">14</text>
+    <text x="145" y="138" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="15" fill="#8aa0a8" letter-spacing="1">REPOSITORIES</text>
+  </g>
+  <!-- tile 2: Followers -->
+  <g>
+    <rect x="300" y="40" width="270" height="120" rx="12" fill="url(#tileGrad)" stroke="#1d3340"/>
+    <text x="435" y="105" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="48" font-weight="700" fill="#4dd0e1">8</text>
+    <text x="435" y="138" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="15" fill="#8aa0a8" letter-spacing="1">FOLLOWERS</text>
+  </g>
+  <!-- tile 3: Following -->
+  <g>
+    <rect x="590" y="40" width="270" height="120" rx="12" fill="url(#tileGrad)" stroke="#1d3340"/>
+    <text x="725" y="105" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="48" font-weight="700" fill="#4dd0e1">6</text>
+    <text x="725" y="138" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="15" fill="#8aa0a8" letter-spacing="1">FOLLOWING</text>
+  </g>
+  <!-- tile 4: Stars -->
+  <g>
+    <rect x="880" y="40" width="270" height="120" rx="12" fill="url(#tileGrad)" stroke="#1d3340"/>
+    <text x="1015" y="105" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="48" font-weight="700" fill="#ffce54">9</text>
+    <text x="1015" y="138" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="15" fill="#8aa0a8" letter-spacing="1">STARS EARNED</text>
+  </g>
+
+  <text x="600" y="22" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="14" fill="#5f7a86" letter-spacing="2">GITHUB STATISTICS</text>
+</svg>
