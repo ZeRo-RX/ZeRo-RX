@@ -49,7 +49,7 @@ I build things with **ESP32 / ESP8266**, **MicroPython**, **C**, and **Python**,
 ## GitHub Statistics
 
 <p align="center">
-  <img src="./assets/stats/profile-stats.svg" width="100%" alt="ZeRo-RX GitHub statistics">
+  <img src="./assets/stats/profile-stats.svg?v=2" width="100%" alt="ZeRo-RX GitHub statistics">
 </p>
 
 ## Current Focus
