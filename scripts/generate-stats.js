@@ -147,7 +147,7 @@ async function main() {
   ]);
 
   const stats = {
-    repos: user.public_repos,
+    repos: repos.length,
     followers: user.followers,
     following: user.following,
     stars: repos.reduce((sum, r) => sum + (r.stargazers_count || 0), 0),
