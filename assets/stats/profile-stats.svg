@@ -6,7 +6,7 @@
   Numbers reflect the public profile (repositories / followers / following / stars).
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200"
-     role="img" aria-label="ZeRo-RX GitHub statistics: 16 repositories, 9 followers, 6 following, 10 stars">
+     role="img" aria-label="ZeRo-RX GitHub statistics: 16 repositories, 8 followers, 6 following, 10 stars">
   <defs>
     <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0e1d27"/>
@@ -32,7 +32,7 @@
   <g>
     <rect x="300" y="40" width="270" height="120" rx="12" fill="url(#tileGrad)" stroke="#1d3340"/>
     <text x="435" y="105" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
-          font-size="48" font-weight="700" fill="#4dd0e1">9</text>
+          font-size="48" font-weight="700" fill="#4dd0e1">8</text>
     <text x="435" y="138" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
           font-size="15" fill="#8aa0a8" letter-spacing="1">FOLLOWERS</text>
   </g>
